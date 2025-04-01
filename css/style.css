@@ -18,7 +18,7 @@ p {
     max-width: 800px;
     margin: 10em auto;
     background: #fff;
-    border-radius: 5px;
+    border-radius: 0.5em;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: row;
@@ -47,4 +47,41 @@ p {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.list-type-list-wrapper ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.list-type-list-wrapper ul li {
+    padding: 0.2em 0.4em;
+}
+
+.list-type-list-wrapper ul li:hover {
+    cursor: pointer;
+    background-color: #393156;
+    color: #ffffff;
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 99;
+    display: none;
+}
+
+.modal-container .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 0.5em;
+    padding: 1em;
 }
